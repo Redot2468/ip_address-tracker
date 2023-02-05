@@ -83,3 +83,22 @@ h2 {
     border: none;
   }
 }
+
+/* a section of the ip information block */
+
+.info__container {
+  border: var(--border);
+  text-align: center;
+  padding: 1rem;
+}
+
+.info__heading {
+  font-weight: 500;
+  color: var(--color-secondary);
+  font-size: 1.3rem;
+  letter-spacing: 1.5px;
+}
+
+.info {
+  margin-top: 0.8rem;
+}
