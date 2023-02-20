@@ -23,6 +23,75 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- leaflet for the map -->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="banner__container">
+        <!-- banner -->
+        <h1 class="banner__heading">IP Address Tracker</h1>
+
+        <!-- form -->
+        <form action="" method="post" class="form__container">
+          <div class="input__container">
+            <input
+              type="text"
+              class="ip__input"
+              name="ip__input"
+              placeholder="Search for any IP address"
+              required
+            />
+            <button type="submit" class="submit__btn">
+              <img src="./images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+        </form>
+
+        <!-- ip information block -->
+
+        <div class="ip__info">
+          <section
+            class="info__container ip__address-container"
+            id="ip__adress-container"
+          >
+            <p class="info__heading ip__heading">IP ADDRESS</p>
+            <h2 class="info ip__address"></h2>
+          </section>
+
+          <section class="info__container location__container">
+            <p class="info__heading location__heading">LOCATION</p>
+            <h2 class="info location"></h2>
+          </section>
+
+          <section class="info__container timezone__container">
+            <p class="info__heading timezone__heading">TIMEZONE</p>
+            <h2 class="info timezone"></h2>
+          </section>
+
+          <section class="info__container isp__container">
+            <p class="info__heading isp__heading">ISP</p>
+            <h2 class="info isp"></h2>
+          </section>
+        </div>
+      </div>
+
+      <div id="map"></div>
+    </div>
+    <!-- script -->
+    <script src="./js/main.js"></script>
+  </body>
 </html>

@@ -40,16 +40,20 @@ h2 {
 }
 
 /* form */
+.form__container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
 
 .input__container {
-  border: var(--border);
   width: fit-content;
   border-radius: 17px;
   overflow: hidden;
 }
 
 .ip__input {
-  padding: 1.5rem 2rem 1.5rem 1.5rem;
+  padding: 1.5rem 3rem 1.5rem 1.5rem;
   border: none;
   font-weight: 500;
   color: var(--color-primary);
@@ -70,6 +74,7 @@ h2 {
   background: black;
   padding: 1.5rem 2rem;
   transition: background 0.2s;
+  margin-left: -5px;
 }
 
 .submit__btn:hover {
@@ -88,13 +93,13 @@ h2 {
 
 .info__container {
   text-align: center;
-  padding: 1rem;
+  padding: 0rem;
 }
 
 .info__heading {
   font-weight: 500;
   color: var(--color-secondary);
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   letter-spacing: 1.5px;
 }
 
@@ -106,13 +111,18 @@ h2 {
 /* info block */
 
 .ip__info {
-  border: 1px solid green;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 1rem;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 100px rgb(240, 240, 240);
+  background: var(--color-white);
+  box-shadow: 0 10px 100px rgb(165, 164, 164);
+  margin-top: 6rem;
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 500;
+  top: 5%;
 }
 
 @media screen and (min-width: 768px) {
@@ -122,12 +132,12 @@ h2 {
     padding: 3rem 0;
     column-gap: 2rem;
     max-width: 1150px;
-    margin: auto;
+    margin: 4rem auto;
   }
 
   .ip__info .info {
     margin-top: 1rem;
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .ip__info .info__container {
@@ -144,9 +154,8 @@ h2 {
 /* background */
 .banner__container {
   background: url(../images/pattern-bg.png) no-repeat center / cover;
-  width: 100vw;
   height: 40vh;
-  padding-top: 1rem;
+  padding: 1rem 2rem;
   text-align: center;
 }
 
@@ -162,4 +171,12 @@ h2 {
     font-weight: 500;
     color: var(--color-white);
   }
+}
+
+/* map */
+
+#map {
+  border: 1px solid green;
+  height: 500px;
+  width: 100vw;
 }
